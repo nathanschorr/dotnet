@@ -6,30 +6,16 @@ namespace console_dotnet
     {
         static void Main(string[] args)
         {
-            String nome;
-            nome = "Apólo";
-            Console.WriteLine("Hello Apólo!");
-            Console.WriteLine(nome);
 
-            Double valor = 1.5;
-            Double quantidade = 2.5;
-            Double resultado = valor * quantidade;
-            Console.WriteLine(resultado);
+            Primeiro p = new Primeiro();
+            p.nome1 = "Apólo"; 
+            p.idade = "5 meses";
+            p.peso = "16kg";
+            
+            Console.WriteLine("O nome do gordo é: " + p.nome1);
+            Console.WriteLine("A idade do Apólo é: " + p.idade);
+            Console.WriteLine("O peso do bundiones é: " + p.peso);
 
-            Boolean maiorQueDez = valor > 10;
-            if (maiorQueDez) {
-                Console.WriteLine($"{resultado} é maior que dez");
-            }else{
-                Console.WriteLine($"{resultado} é menor que dez");
-
-            }
-        
-            String nome1 = "Apólo";
-            String idade = "5 meses";
-            String peso = "16kg";
-        
-
-            Console.WriteLine($"{nome1}, {idade}, {peso}");
 
         
         }
